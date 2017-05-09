@@ -1,0 +1,10 @@
+{
+  "port": 8001,
+  "server": {
+    "baseDir": "./public/",
+    "index": "index.html"
+  },
+  "files": [
+    "./public/**/*.{html,htm,css,js}"
+  ]
+}

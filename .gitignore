@@ -1,9 +1,6 @@
 .idea
-
 .DS_Store
 Thumbs.db
-
 yarn.lock
-
-# Dependency directories
 node_modules
+*.js.map

@@ -1,8 +1,10 @@
+const webpack = require('webpack');
+
 module.exports = {
-  entry: './src/main.js',
+  entry: __dirname + '/src/main.js',
 
   output: {
-    path: 'build',
+    path: __dirname + '/build',
     filename: 'bundle.js'
   },
 
@@ -14,5 +16,10 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
+  ]
 };

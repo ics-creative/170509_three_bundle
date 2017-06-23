@@ -1,10 +1,16 @@
+// 検証① 500KB, load from npm default main
 //import {BoxGeometry, DirectionalLight, Mesh, MeshPhongMaterial, PerspectiveCamera, Scene, WebGLRenderer} from 'three';
 
+// 検証② 521KB, load from npm source root
+//import {BoxGeometry, DirectionalLight, Mesh, MeshPhongMaterial, PerspectiveCamera, Scene, WebGLRenderer} from 'three/src/Three';
+
+// 検証③ 334KB, load from npm each source code
 import {WebGLRenderer} from 'three/src/renderers/WebGLRenderer';
 import {PerspectiveCamera} from 'three/src/cameras/PerspectiveCamera';
 import {BoxGeometry} from 'three/src/geometries/BoxGeometry';
 import {MeshPhongMaterial} from 'three/src/materials/MeshPhongMaterial';
 import {DirectionalLight} from 'three/src/lights/DirectionalLight';
+
 
 window.addEventListener('DOMContentLoaded', () => {
   // レンダラーを作成
@@ -23,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // 箱を作成
   const geometry = new BoxGeometry(1, 1, 1);
   const material = new MeshPhongMaterial({color: 0xff0000});
-  const box = new Mesh(geometry, material);
+  const box      = new Mesh(geometry, material);
   box.position.z = -5;
   scene.add(box);
 

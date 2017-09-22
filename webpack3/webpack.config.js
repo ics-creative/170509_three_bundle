@@ -23,7 +23,7 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.optimize.　　　　　　　　　　　　　(),
     new webpack.optimize.UglifyJsPlugin(),
   ]
 };

@@ -4,3 +4,4 @@ Thumbs.db
 yarn.lock
 node_modules
 *.js.map
+/webpack2-opt/package-lock.json

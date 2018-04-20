@@ -1,10 +1,8 @@
-// 検証① 503KB, load from npm default main
-//import {BoxGeometry, DirectionalLight, Mesh, MeshPhongMaterial, PerspectiveCamera, Scene, WebGLRenderer} from 'three';
 
-// 検証② 524KB, load from npm source root
-//import {BoxGeometry, DirectionalLight, Mesh, MeshPhongMaterial, PerspectiveCamera, Scene, WebGLRenderer} from 'three/src/Three';
 
-// 検証③ 338KB, load from npm each source code
+
+
+
 import {Scene} from 'three/src/scenes/Scene';
 import {Mesh} from 'three/src/objects/Mesh';
 import {WebGLRenderer} from 'three/src/renderers/WebGLRenderer';

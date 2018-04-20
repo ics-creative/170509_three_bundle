@@ -1,6 +1,7 @@
-const webpack = require('webpack');
-
 module.exports = {
+
+  mode: 'production',
+
   entry: __dirname + '/src/main.js',
 
   output: {
@@ -17,9 +18,4 @@ module.exports = {
       }
     ]
   },
-
-  plugins: [
-    new webpack.optimize.ModuleConcatenationPlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
-  ]
 };

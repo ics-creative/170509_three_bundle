@@ -1,4 +1,4 @@
-import {BoxGeometry, DirectionalLight, Mesh, MeshPhongMaterial, PerspectiveCamera, Scene, WebGLRenderer} from 'three';
+import {BoxGeometry, DirectionalLight, Mesh, MeshPhongMaterial, PerspectiveCamera, Scene, WebGLRenderer} from 'three/build/three.module';
 
 window.addEventListener('DOMContentLoaded', () => {
   // レンダラーを作成

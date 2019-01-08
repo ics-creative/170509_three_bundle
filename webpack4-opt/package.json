@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1",
+    "webpack-glsl-loader": "^1.0.1"
+  },
+  "dependencies": {
+    "three": "^0.100.0"
+  }
+}
